@@ -62,47 +62,62 @@
 
 ## 可视化效果
 
+本项目完成了八大分析维度的图表渲染，并构建了一张综合可视化大屏（ECharts + Vue 3）。
+以下图表均为系统实际运行截图，数据源为 Hive 分析结果导出至 MySQL 后的真实数据。
+
 ### 数据大屏总览
 
-![深圳充电需求时空分析大屏](assets/images/dashboard-overview.png)
+![深圳充电需求时空分析大屏](assets/images/00-dashboard-overview.png)
 
 集成温度影响、POI 分析、区域热点分布等核心模块，支持实时指标监控与多维联动。
 
-### 温度影响分析
+### 维度一：温度影响分析
 
-![温度影响分析](assets/images/chart-temperature.png)
+![温度影响分析](assets/images/01-temperature.png)
 
 温度区间分布与充电站占用率关系，量化气温对充电需求的影响程度。
 
-### 电价敏感性分析
+### 维度二：电价敏感性分析
 
-![电价敏感性分析](assets/images/chart-price-elasticity.png)
+![电价敏感性分析](assets/images/02-price-elasticity.png)
 
-峰谷时段电价与占用率关系，计算不同时段需求价格弹性系数。
+峰谷时段电价与占用率关系，计算不同时段需求价格弹性系数（相关系数）。
 
-### POI 影响分析
+### 维度三：POI 影响分析
 
-![POI 影响分析](assets/images/chart-poi.png)
+![POI 影响分析](assets/images/03-poi.png)
 
 不同 POI 类型下的总充电量与平均占用率对比，揭示周边设施环境对充电需求的影响。
 
-### 区域热点分析
+### 维度四：区域热点分析
 
-![区域热点分析](assets/images/chart-regional-hotspot.png)
+![区域热点分析](assets/images/04-regional-hotspot.png)
 
 各交通分析区（TAZ）平均占用率与总充电量排名，识别充电需求空间热点。
 
-### 时空复合分析
+### 维度五：充电桩规模分析
 
-![时空复合分析](assets/images/chart-spatiotemporal.png)
+![充电桩规模分析](assets/images/05-station-scale.png)
+
+不同规模站点（按充电桩数量分级）的占用率与充电量对比，分析规模效应。
+
+### 维度六：时间-价格-气温耦合分析
+
+![时间-价格-气温耦合分析](assets/images/06-time-price-weather.png)
+
+时间维度、价格维度联合分析，量化时段与电价对占用率的复合影响。
+
+### 维度七：时间-价格-POI 交互分析
+
+![时间-价格-POI 交互分析](assets/images/07-time-price-poi.png)
+
+不同 POI 密度类别下占用率随时段的变化，分析 POI 与电价的交互作用。
+
+### 维度八：时空复合分析
+
+![时空复合分析](assets/images/08-spatiotemporal.png)
 
 一天内各小时平均占用率热力分布，结合区域对比呈现充电需求的时空规律。
-
-### 任务执行验证
-
-![MapReduce 任务执行日志](assets/images/job-execution-log.png)
-
-HiveQL 提交后的 MapReduce 执行日志，验证分析任务在集群上成功运行。
 
 ## 数据集
 
