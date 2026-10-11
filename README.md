@@ -210,8 +210,7 @@ Raw data is not included in this repository due to size.
 
 ## Author
 
-李华海 (Li Huahai) | 江西软件职业技术大学 软件工程学院
-指导教师：刘秋华
+李华海 (Li Huahai) 
 
 ## License
 
