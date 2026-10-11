@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<configuration>
+  <!-- 使用 MapReduce 引擎 -->
+  <property>
+    <name>hive.execution.engine</name>
+    <value>mr</value>
+  </property>
+
+  <!-- 若存在 Spark 相关配置需注释掉
+  <property>
+    <name>spark.yarn.jars</name>
+    <value>/path/to/spark/jars/*</value>
+  </property>
+  -->
+
+  <!-- MySQL 元数据连接配置（请替换为实际环境值）
+  <property>
+    <name>javax.jdo.option.ConnectionURL</name>
+    <value>jdbc:mysql://your_mysql_host:3306/hive_metastore?createDatabaseIfNotExist=true</value>
+  </property>
+  <property>
+    <name>javax.jdo.option.ConnectionDriverName</name>
+    <value>com.mysql.jdbc.Driver</value>
+  </property>
+  <property>
+    <name>javax.jdo.option.ConnectionUserName</name>
+    <value>your_user</value>
+  </property>
+  <property>
+    <name>javax.jdo.option.ConnectionPassword</name>
+    <value>your_password</value>
+  </property>
+  -->
+</configuration>

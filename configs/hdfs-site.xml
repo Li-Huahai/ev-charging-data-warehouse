@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<configuration>
+  <property>
+    <name>dfs.datanode.data.dir</name>
+    <value>/data/hadoop/datanode</value>
+  </property>
+  <property>
+    <name>dfs.namenode.name.dir</name>
+    <value>/data/hadoop/namenode</value>
+  </property>
+  <property>
+    <name>dfs.replication</name>
+    <value>2</value>
+    <!-- 单机伪分布式可设为 1 -->
+  </property>
+</configuration>
