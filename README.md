@@ -210,7 +210,7 @@ Raw data is not included in this repository due to size.
 
 ## Author
 
-李华海 (Li Huahai) 
+李华海 (Li Huahai)
 
 ## License
 
